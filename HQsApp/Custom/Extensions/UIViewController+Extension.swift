@@ -60,7 +60,7 @@ extension UIViewController {
             loaderView?.removeFromSuperview()
         }
     }
-    func setLoader(loading isLoading: Bool) {
+    func isLoading(loading isLoading: Bool) {
         isLoading ? self.showLoader() : self.hideLoader()
     }
     

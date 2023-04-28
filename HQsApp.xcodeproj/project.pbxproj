@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		14B49C33CCD773377F61155A /* Pods_HQsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3839FC270B2C4D161429B83 /* Pods_HQsAppTests.framework */; };
+		4C12F4A229FB5FED00AB4A09 /* HqCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C12F4A129FB5FED00AB4A09 /* HqCollectionViewCell.swift */; };
+		4C12F4A429FB61AD00AB4A09 /* HqEmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C12F4A329FB61AD00AB4A09 /* HqEmptyCollectionViewCell.swift */; };
+		4C12F4A629FB61E100AB4A09 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C12F4A529FB61E100AB4A09 /* UICollectionViewCell+Extension.swift */; };
+		4C12F4A829FB631500AB4A09 /* HqModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C12F4A729FB631500AB4A09 /* HqModel.swift */; };
 		4CD2BA6B29FA03530059E3C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2BA6A29FA03530059E3C3 /* AppDelegate.swift */; };
 		4CD2BA6D29FA03530059E3C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2BA6C29FA03530059E3C3 /* SceneDelegate.swift */; };
 		4CD2BA7429FA03560059E3C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD2BA7329FA03560059E3C3 /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 /* Begin PBXFileReference section */
 		03793A6D67C9005A8B334F6F /* Pods-HQsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQsApp.debug.xcconfig"; path = "Target Support Files/Pods-HQsApp/Pods-HQsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1B5D07CE3A8ECA5687046629 /* Pods-HQsApp-HQsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQsApp-HQsAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-HQsApp-HQsAppUITests/Pods-HQsApp-HQsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C12F4A129FB5FED00AB4A09 /* HqCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HqCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C12F4A329FB61AD00AB4A09 /* HqEmptyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HqEmptyCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C12F4A529FB61E100AB4A09 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		4C12F4A729FB631500AB4A09 /* HqModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HqModel.swift; sourceTree = "<group>"; };
 		4CD2BA6729FA03530059E3C3 /* HQsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD2BA6A29FA03530059E3C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD2BA6C29FA03530059E3C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +109,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C12F4A029FB5FDE00AB4A09 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4C12F4A129FB5FED00AB4A09 /* HqCollectionViewCell.swift */,
+				4C12F4A329FB61AD00AB4A09 /* HqEmptyCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4C12F4A929FB65A600AB4A09 /* HqDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HqDetail;
+			sourceTree = "<group>";
+		};
+		4C12F4AA29FB660400AB4A09 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
 		4CD2BA5E29FA03520059E3C3 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +197,8 @@
 		4CD2BA9B29FA04540059E3C3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4C12F4AA29FB660400AB4A09 /* ShoppingCart */,
+				4C12F4A929FB65A600AB4A09 /* HqDetail */,
 				4CD2BA9C29FA045D0059E3C3 /* Home */,
 			);
 			path = Scenes;
@@ -174,6 +207,7 @@
 		4CD2BA9C29FA045D0059E3C3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4C12F4A029FB5FDE00AB4A09 /* Cell */,
 				4CD2BAA229FA06660059E3C3 /* HomeViewController.swift */,
 				4CD2BAA429FA066E0059E3C3 /* HomeView.swift */,
 				4CD2BAA929FA07FE0059E3C3 /* HomeViewModel.swift */,
@@ -208,6 +242,7 @@
 		4CD2BAA029FA04FB0059E3C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4C12F4A729FB631500AB4A09 /* HqModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				4CD2BAB129FA0A9C0059E3C3 /* UIViewController+Extension.swift */,
+				4C12F4A529FB61E100AB4A09 /* UICollectionViewCell+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -508,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C12F4A829FB631500AB4A09 /* HqModel.swift in Sources */,
 				4CD2BAB229FA0A9C0059E3C3 /* UIViewController+Extension.swift in Sources */,
 				4CD2BA6B29FA03530059E3C3 /* AppDelegate.swift in Sources */,
 				4CD2BAAF29FA0A330059E3C3 /* BaeViewModel.swift in Sources */,
@@ -515,7 +552,10 @@
 				4CD2BAA529FA066E0059E3C3 /* HomeView.swift in Sources */,
 				4CD2BA6D29FA03530059E3C3 /* SceneDelegate.swift in Sources */,
 				4CD2BAAC29FA09840059E3C3 /* BaseView.swift in Sources */,
+				4C12F4A229FB5FED00AB4A09 /* HqCollectionViewCell.swift in Sources */,
+				4C12F4A629FB61E100AB4A09 /* UICollectionViewCell+Extension.swift in Sources */,
 				4CD2BAA829FA07D40059E3C3 /* HasCustomView.swift in Sources */,
+				4C12F4A429FB61AD00AB4A09 /* HqEmptyCollectionViewCell.swift in Sources */,
 				4CD2BAA329FA06660059E3C3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
